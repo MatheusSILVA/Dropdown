@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dropdown</title>
+	<link rel="stylesheet" type="text/css" href="Estilo.css">
+</head>
+<body>
+
+	<div class="card">
+		<div class="content">
+			<div class="imgBX">
+				<img src="perfil.png">
+			</div>
+			<h2>Matheus Silva<br><span>Desenvolvedor WEB</span></h2>
+		</div>
+	
+	    <ul class="navigation">
+		  <li>
+			  <a href="#">
+				  <ion-icon name="contact"></ion-icon>
+				  Editar perfil
+			  </a>
+		  </li>
+		  <li>
+			  <a href="#">
+				  <ion-icon name="chatboxes"></ion-icon>
+				  Caixa de entrada
+			  </a>
+		  </li>
+		  <li>
+			  <a href="#">
+				  <ion-icon name="help-circle"></ion-icon>
+				  Suporte
+			  </a>
+		  </li>
+		  <li>
+			  <a href="#">
+				  <ion-icon name="settings"></ion-icon>
+				  Configurações
+			  </a>
+		  </li>
+		  <li>
+			  <a href="#">
+				  <ion-icon name="log-in"></ion-icon>
+				  Sair
+			  </a>
+		  </li>
+	    </ul>
+	  <div class="toggle"> 
+	  	<ion-icon name="arrow-round-down"></ion-icon>
+	  </div>
+	</div>
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+	<script>
+		const card = document.querySelector('.card');
+		const cardtoggle = document.querySelector('.toggle');
+		cardtoggle.onclick = function() {
+			card.classList.toggle('active');
+		}
+	</script>
+
+</body>
+</html>
